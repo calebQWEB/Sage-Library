@@ -1,0 +1,51 @@
+.sage__footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sage__footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sage__footer-logo {
+    width: 120px;
+}
+
+.sage__footer-links-1,
+.sage__footer-links-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.sage__footer-links-1 li {
+    font-weight: 600;
+}
+
+.sage__footer-links-2 li {
+    font-size: 0.85rem;
+}
+
+@media screen and (max-width: 768px) {
+    .sage__footer-links-1 li, 
+    .sage__footer-links-1 a {
+        font-size: 0.85rem;
+    }
+
+    .sage__footer-links-2 li,
+    .sage__footer-links-2 a {
+        font-size: 0.75rem;
+    }
+
+    .sage__footer-links-1,
+    .sage__footer-links-2 {
+        gap: 0.75rem;
+    }
+}

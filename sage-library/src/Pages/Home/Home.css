@@ -1,0 +1,291 @@
+.sage__main {
+    position: relative;
+}
+
+.sage__hero-container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sage__hero-container {
+    width: 60%;
+}
+
+.sage__hero-intro {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.sage__hero-intro span {
+    background: linear-gradient(to right, var(--accent-color), var(--text-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.sage__hero-sub-intro {
+    margin-bottom: 2rem;
+}
+
+.sage__members-overall-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sage__members-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.sage__members-image {
+    border-radius: 50%;
+}
+
+.sage__members-image:nth-child(2) {
+    margin-left: -12px;
+}
+
+.sage__members-image:nth-child(3) {
+    margin-left: -12px;
+}
+
+.sage__number-of-users h2 {
+    font-size: 1rem;
+}
+
+.sage__number-of-users p {
+    font-size: 0.8rem;
+}
+
+.sage__intro-image {
+    width: 80%;   
+}
+
+.sage__cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+
+.sage__cta-button button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.sage__cta-button button:nth-child(1) {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.sage__cta-button button:nth-child(2) {
+    background-color: var(--primary-color); 
+    color: var(--background-color);  
+}
+
+/* Why us Section */
+.sage__whyusCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;    
+}
+
+.sage__whyus-header {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* How it works section */
+.sage__how-it-works-section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem;
+    row-gap: 5rem;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.sage__how-it-works-section-header-container {
+    grid-row: span 2;
+    grid-column: span 2;
+    font-size: 1.5rem;
+}
+
+.sage__how-it-works-section-info {
+    font-size: 1.125rem;
+}
+
+.sage__how-it-works-section-item h2 {
+    font-size: 2.85rem;
+}
+
+/* Top sages section */
+.sage__top-sages-section-header {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sage__top-sages {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+
+    position: relative;
+}
+
+/* Featured Section */
+.sage__featured-section {
+    overflow-x: hidden;
+}
+
+.sage__featured-section-header {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/* Carousel styling */
+
+@media screen and (max-width: 1024px) {
+    .sage__hero-intro {
+        font-size: 3rem;
+    }
+
+    .sage__hero-sub-intro{
+        font-size: 1rem;
+    }
+
+    .sage__cta-button button {
+        padding: 0.5rem 1.75rem;
+        font-size: 0.85rem;
+        border-radius: 8px;
+    }
+
+    .sage__intro-image {
+        width: 80%;
+    }
+
+    /* Why us Section */
+    .sage__whyus-header {
+        font-size: 3rem;
+    }
+
+    /* Top sages section */
+    .sage__top-sages-section-header {
+        font-size: 3rem;
+    }
+
+    .sage__top-sages {
+        gap: 2rem;
+    }
+
+    /* Featured Section */
+    .sage__featured-section-header {
+        font-size: 3rem; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sage__hero-container {
+        width: 80%;
+    }
+
+    .sage__hero-container-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sage__members-overall-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sage__cta-button {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Why us Section */
+    .sage__whyusCards {
+        flex-direction: column;
+    }
+
+    /* How it works section */
+    .sage__how-it-works-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .sage__how-it-works-section-header {
+        font-size: 2rem;
+    }
+
+    .sage__how-it-works-section-info {
+        font-size: 1rem;
+    }
+
+    .sage__how-it-works-section-item h2 {
+        font-size: 2rem;
+    }
+
+    .sage__how-it-works-section-item p {
+        font-size: 1rem;
+    }
+
+    /* Top sages section */
+    .sage__top-sages-section-header {
+        font-size: 2.5rem;
+    }
+
+    .sage__top-sages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Featured Section */
+    .sage__featured-section-header {
+        font-size: 2.5rem; 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sage__hero-intro {
+        font-size: 2.5rem;
+    }
+
+    .sage__hero-sub-intro{
+        font-size: 0.85rem;
+    }
+
+    .sage__hero-container {
+        width: 100%;
+    }
+
+    .sage__intro-image {
+        width: 50%;   
+    }
+
+    /* Why us Section */
+    .sage__whyus-header {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,108 @@
+.sage__modal-background {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sage__modal {
+    border-radius: 20px;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 2rem;
+}
+
+.sage__modal-button {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sage__modal-button button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+}
+
+.sage__modal-button button:hover {
+    background-color: #E5E9E9;
+}
+
+.sage__modal-signup-form {
+    display: grid;
+    gap: 2rem;
+}
+
+.sage__modal-signup-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sage__modal-signup-form-button {
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 1rem;
+}
+
+/* Login  */
+.sage__modal-login-form {
+    display: grid;
+    gap: 2rem;
+}
+
+.sage__modal-login-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sage__modal-login-form-button {
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .sage__modal {    
+        padding: 0.85rem;
+    }
+
+    .sage__modal-button button {
+        padding: 0.85rem 1.85rem;
+        font-size: 0.85rem;
+    }
+
+    .sage__modal-signup-form label {
+        font-size: 0.85rem
+    }
+
+    .sage__modal-signup-form-button {
+        padding: 0.85rem 1.85rem;
+        font-size: 0.85rem;
+    }
+
+    .sage__modal-login-form label {
+        font-size: 0.85rem
+    }
+
+    .sage__modal-login-form-button {
+        padding: 0.85rem 1.85rem;
+        font-size: 0.85rem;
+    }
+}

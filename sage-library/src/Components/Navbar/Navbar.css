@@ -1,0 +1,115 @@
+nav {
+    padding: 1rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sage-logo {
+    width: 10%;
+}
+
+.sage__nav-links-container{
+    display: flex;
+    gap: 3rem;
+}
+
+.sage__get-started-button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background-color: var(--background-color);
+    border: 0.5px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+}
+
+.sage__mobile-navigation {
+    display: none;
+}
+
+.sage__mobile-nav-link-click-icon {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 1rem 2rem;
+    }
+
+    .sage-logo {
+        width: 100px;
+    }
+
+    .sage__get-started-button {
+        padding: 0.5rem 1.75rem;
+        font-size: 0.85rem;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 1rem;
+    }
+
+    /* Hide the desktop navlink and desktop Get started button */
+    .sage__nav-links-container,
+    .sage__get-started-button {
+        display: none;
+    }
+
+    /* Show the mobile navigation links and book icon */
+    .sage__mobile-nav-link-click-icon {
+        display: block;
+    }
+    
+    .sage__mobile-navigation {
+        background-color: var(--primary-color);
+        padding: 2rem;
+        min-height: 300px;
+        min-width: 200px;
+        border-radius: 10px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        position: absolute;
+        top: 100%;
+        z-index: 1;
+    }
+
+    .sage__mobile-nav-links-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .sage__mobile-nav-link a{
+        color: var(--background-color);
+        font-size: 1.125rem;
+    }
+
+    .sage__mobile-get-started-button {
+        padding: 0.5rem 1.75rem;
+        font-size: 1rem;
+        background-color: var(--background-color);
+        border: 0.5px solid var(--primary-color);
+        color: var(--primary-color);
+        border-radius: 8px;
+    }
+
+    .sage__mobile-nav-logo-contianer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+}

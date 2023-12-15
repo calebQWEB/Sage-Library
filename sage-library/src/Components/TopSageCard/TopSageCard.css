@@ -1,0 +1,51 @@
+.top-sage-card {
+    max-width: 300px;
+    display: grid;
+    text-align: center;
+    gap: 2rem;
+
+    background-color: #E5E9E9;
+    box-shadow: 6px 6px 18px #a5a5a5;
+    padding: 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+
+.top-sage-card:focus {
+    transform: scale(1.125);
+    filter: none;
+    background-color: #E5E9E9;
+}
+
+.top-sage-card-image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.top-sage-book-number {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.top-sage-card-button {
+    background-color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--background-color);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .top-sage-card h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-sage-card {
+        width: 100%;
+    }
+}
