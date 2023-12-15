@@ -1,0 +1,8 @@
+.book-container{
+    cursor: pointer;
+}
+
+.book-image {
+    height: 250px;
+    width: 150px;
+}

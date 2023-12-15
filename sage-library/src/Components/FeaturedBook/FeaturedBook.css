@@ -1,0 +1,53 @@
+.sage__featured-book {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.sage__featured-book-image {
+    transform: rotate(-10deg);
+}
+
+.sage__featured-book-title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.sage__featured-book-description {
+    font-size: 1.25rem;
+}
+
+.sage__featured-book-author {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #929292;
+}
+
+@media screen and (max-width: 768px) {
+    .sage__featured-book {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .sage__featured-book-title {
+        font-size: 1.5rem;
+    }
+
+    .sage__featured-book-details {
+        text-align: center;
+    }
+
+    .sage__featured-book-description {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .sage__featured-book-author {
+        font-size: 1.125rem;
+    }
+}

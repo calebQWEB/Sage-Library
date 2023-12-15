@@ -1,0 +1,266 @@
+/* Logged In Header section */
+.sage__loggedInIntro-header {
+    font-size: 3rem;
+}
+
+.loggedInIntro span {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+
+.loggedIn__carousel {
+    margin-top: 2rem;
+}
+
+.loggedIn__image-header {
+    margin-bottom: 1rem;
+}
+
+.logggedIn__intro-image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* You might like section */
+.loggedIn__you-might-like-header {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.loggedIn__you-might-like-books {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Quick picks */
+.loggedIn-quick-picks-header-container {
+    margin-bottom: 1rem;
+}
+
+.loggedIn-quick-picks-header {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.loggedIn-quick-picks-header-container span {
+    font-size: 1rem;
+}
+
+.loggedIn__quick-pick-books {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Read again */
+.loggedIn__read-again {
+    background-color: #E5E9E9;
+    position: relative;
+}
+
+.loggeIn__read-again-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loggedIn__read-again-header-container {
+    margin-bottom: 1rem;
+}
+
+.loggedIn__read-again-header {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.loggedIn__read-again-button {
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+
+.loggedIn__read-again-header-container span {
+    font-size: 1rem;
+}
+
+.loggedIn__read-again-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.loggedIn__read-again-book-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    cursor: pointer;
+}
+
+.loggedIn__read-again-book-title {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* Read again modal */
+.loggedIn__read-again-modal {
+    background-color: #000000;
+    padding: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 500px;
+    overflow: scroll;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.loggedIn__modal-read-again-book-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    cursor: pointer;
+}
+
+.loggedIn__modal-read-again-book-title {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--background-color);
+}
+
+/* Genres */
+/* Genre-1 */
+.loggedIn__genre-1-header-container {
+    margin-bottom: 1rem;
+}
+
+.loggedIn__genre-1-header {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Genre-2 */
+.loggedIn__genre-2-header-container {
+    margin-bottom: 1rem;
+}
+
+.loggedIn__genre-2-header {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Genre-2 */
+.loggedIn__genre-3-header-container {
+    margin-bottom: 1rem;
+}
+
+.loggedIn__genre-3-header {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Logged In Header section */
+    .sage__loggedInIntro-header {
+        font-size: 2.25rem;
+    }
+
+    .loggedInIntro span {
+        font-size: 1rem;
+    }
+
+    .loggedIn__image-header {
+        font-size: 1.25rem;
+    }
+
+
+    .logggedIn__intro-image {
+        height: 250px;
+    }
+
+    /* You might like section */
+    .loggedIn__you-might-like-header {
+        font-size: 1.5rem;
+    }
+
+    /* Quick picks section */
+    .loggedIn-quick-picks-header {
+        font-size: 1.5rem;
+    }
+
+    .loggedIn-quick-picks-header-container span {
+        font-size: 0.85rem;
+    }
+
+    /* Read again */
+    .loggedIn__read-again-header {
+        font-size: 1.5rem;
+    }
+
+    .loggedIn__read-again-button {
+        font-size: 0.85rem;
+    }
+
+    .loggedIn__read-again-header-container span {
+        font-size: 0.85rem;
+    }
+
+    .loggedIn__read-again-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .loggedIn__read-again-book-title {
+        font-size: 0.85rem;
+    }
+
+    /* Read again modal */
+    .loggedIn__read-again-modal {
+        height: 400px;
+    }
+
+    .loggedIn__modal-read-again-book-title {
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+        color: var(--background-color);
+    }
+
+    /* Genres */
+    /* Genre-1 */
+    .loggedIn__genre-1-header {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    /* Genre-2 */
+    .loggedIn__genre-2-header {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    /* Genre-2 */
+    .loggedIn__genre-3-header {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .loggedIn__read-again-modal {
+        width: 300px;
+        padding: 1rem;
+    }
+}
