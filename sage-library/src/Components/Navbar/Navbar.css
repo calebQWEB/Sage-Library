@@ -15,6 +15,25 @@ nav {
     gap: 3rem;
 }
 
+.sage__user-profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.sage__user-username {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.profile-icons {
+    display: none;
+}
+
 .sage__get-started-button {
     padding: 0.75rem 2rem;
     font-size: 1rem;
@@ -95,6 +114,22 @@ nav {
     .sage__mobile-nav-link a{
         color: var(--background-color);
         font-size: 1.125rem;
+    }
+
+    .sage__user-username {
+        display: none;
+    }
+
+    .profile-icons {
+        display: block;
+    }
+
+    .chevron-icon {
+        display: none;
+    }
+
+    .sage__user-profile-container {
+        position: static;
     }
 
     .sage__mobile-get-started-button {
